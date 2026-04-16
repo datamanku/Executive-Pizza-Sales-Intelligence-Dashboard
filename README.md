@@ -96,11 +96,42 @@ Based on the dashboard structure, the following actions would be relevant for bu
 
 ---
 
+## Dataset
+The project uses the Maven Analytics Pizza Place Sales dataset, consisting of four CSV tables:
+- Orders
+- Order Details
+- Pizzas
+- Pizza Types
+
+Some of the many attributes that these tables capture are order timestamps, quantities, pizza attributes, category information, size, and item pricing.
+
+---
+
+## Data Preparation
+Data preparation was performed in Power Query and included:
+- Renaming tables and columns to improve reporting readability
+- Promoting header rows where required
+- Validating and correcting data types
+- Reviewing column quality to confirm null-free fields
+- Loading transformed tables into the Power BI data model
+
+---
+
 ## Data Model
+
+The report is built on a relational model where `Order Details` functions as the fact table and `Orders`, `Pizzas`, and `Pizza Types` serve as supporting dimension tables. A custom date table was created to enable month, quarter, weekday, and time-based analysis, improving reporting flexibility and supporting correct sort behavior for calendar attributes.
+
+Additional calculated columns were created for:
+- Time slots to identify peak ordering hours
+- Month and month number for correct chronological sorting
+- Day and weekday number for weekday trend analysis
+
 
 - **Tables Relationships and Cardinalities**
 
 <img width="1380" height="668" alt="image" src="https://github.com/user-attachments/assets/c3cee039-bdab-4b16-a6a8-ce16a5e3e31b" />
+
+
 
 
 ---
