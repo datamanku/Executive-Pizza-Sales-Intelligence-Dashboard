@@ -1,9 +1,27 @@
 
 ---
 
-# Executive Pizza Sales Intelligence Dashboard
+# Executive Restaurant Sales Intelligence Dashboard
 
 <img width="1033" height="650" alt="image" src="https://github.com/user-attachments/assets/2435b3ea-46fc-4555-b4e5-21d0f3fa0e38" />
+
+---
+
+## Navigation
+
+- [Purpose](#purpose) 
+- [Business Problem](#business-problem) 
+- [Executive Questions](#executive-questions)
+- [Dataset](#dataset)
+- [Data Preparation](#data-preparation) 
+- [Data Model](#data-model)
+- [DAX Used (Measures)](#dax-used-measures)
+- [Dashboard KPIs](#dashboard-kpis) 
+- [Dashboard Design (Business Problem -> Analysis -> Insights & Recommendations -> Action)](#dashboard-design-business-problem---analysis---insights--recommendations---action)
+- [Executive Business Insights](#executive-business-insights) 
+- [Actionable Business Recommendations](#actionable-business-recommendations) 
+- [Business Value Delivered](#business-value-delivered)
+- [Tools & Skills Used](#tools--skills-used)
 
 ---
 
@@ -52,50 +70,6 @@ This solution addresses that gap by creating an executive dashboard that convert
 
 ---
 
-
-
-## Executive Business Insights
-
-- KPI cards provide a compact executive summary for rapid business review.
-- Monthly trend analysis supports revenue monitoring and helps identify periods of stronger or weaker commercial performance.
-- Day-level demand analysis supports workforce planning and improves staffing alignment with customer traffic.
-- Hour-level demand visibility helps operations teams prepare for service peaks and improve throughput readiness.
-- Product performance ranking enables menu engineering by distinguishing hero items from weak contributors.
-- Category and size preference analysis helps guide product positioning, promotional planning, and inventory preparation.
-
-
----
-
-
-
-## Actionable Business Recommendations
-
-Based on the dashboard structure, the following actions would be relevant for business stakeholders:
-
-- Align staffing more closely with the busiest days and peak order hours
-- Protect and promote top-performing pizzas through stronger menu placement or targeted offers
-- Review bottom-performing products for repositioning, repricing, bundling, or removal
-- Use category and size preference trends to optimize inventory planning and product mix
-- Monitor monthly sales movement regularly to support proactive business planning
-
-
----
-
-
-## Tools & Skills Used
-
-- **Power BI**
-- **Power Query**
-- **Data Modeling**
-- **DAX**
-- **KPI Dashboard Design**
-- **Business Performance Analysis**
-- **Interactive Data Visualization**
-- **Visual Story telling**
-
-
----
-
 ## Dataset
 The project uses the Maven Analytics Pizza Place Sales dataset, consisting of four CSV tables:
 - Orders
@@ -132,10 +106,47 @@ Additional calculated columns were created for:
 <img width="1380" height="668" alt="image" src="https://github.com/user-attachments/assets/c3cee039-bdab-4b16-a6a8-ce16a5e3e31b" />
 
 
+---
+
+## DAX Used (Measures)
+
+The dashboard includes the use of calculated tables, columns and measures derived using DAX for the analysis purpose. 
+
+
+- ### **Date Table**
+  
+<img width="677" height="825" alt="image" src="https://github.com/user-attachments/assets/d8cbea9f-ce23-4427-92f7-9a978370b6b5" />
+
+- ### **Time Slot**
+
+<img width="704" height="815" alt="image" src="https://github.com/user-attachments/assets/ffea62b7-1cf8-4312-b871-2abd14bca8ee" />
+
+- ### **Time Slot Sorting**
+
+<img width="696" height="830" alt="image" src="https://github.com/user-attachments/assets/05ab9b49-b279-4f3f-bacb-ee86dbe04744" />
+
+- ### **Total Sales**
+  
+<img width="277" height="173" alt="image" src="https://github.com/user-attachments/assets/c23d291e-5058-44f5-9b5d-b7633db2e406" />
+
+- ### **Total Orders** 
+
+<img width="293" height="67" alt="image" src="https://github.com/user-attachments/assets/e28019d4-3ecf-4ffc-84af-6019be617671" />
+
+- ### **Average Orders per Day** 
+
+<img width="400" height="128" alt="image" src="https://github.com/user-attachments/assets/43e416c3-e328-4de7-92f7-d9e655301b8b" />
+
+- ### **Average Pizzas per Order**
+  
+<img width="473" height="135" alt="image" src="https://github.com/user-attachments/assets/d6ceb763-b803-40c2-83b8-7b9c90771d8f" />
+
+
+These Dax functions helps in providing the base for drilling into more structured, detailed and specific analysis directed towards problem statement at hand.
+
 
 
 ---
-
 
 ## Dashboard KPIs
 
@@ -254,42 +265,31 @@ Supports pricing decisions, packaging readiness, prep planning, and product mix 
 
 ---
 
-## DAX Used
-
-The dashboard includes the use of calculated tables, columns and measures derived using DAX for the analysis purpose. 
 
 
-- **Date Table**
-  
-<img width="677" height="825" alt="image" src="https://github.com/user-attachments/assets/d8cbea9f-ce23-4427-92f7-9a978370b6b5" />
+## Executive Business Insights
 
-- **Time Slot**
-
-<img width="704" height="815" alt="image" src="https://github.com/user-attachments/assets/ffea62b7-1cf8-4312-b871-2abd14bca8ee" />
-
-- **Time Slot Sorting**
-
-<img width="696" height="830" alt="image" src="https://github.com/user-attachments/assets/05ab9b49-b279-4f3f-bacb-ee86dbe04744" />
-
-- **Total Sales**
-  
-<img width="277" height="173" alt="image" src="https://github.com/user-attachments/assets/c23d291e-5058-44f5-9b5d-b7633db2e406" />
-
-- **Total Orders** 
-
-<img width="293" height="67" alt="image" src="https://github.com/user-attachments/assets/e28019d4-3ecf-4ffc-84af-6019be617671" />
-
-- **Average Orders per Day** 
-
-<img width="400" height="128" alt="image" src="https://github.com/user-attachments/assets/43e416c3-e328-4de7-92f7-d9e655301b8b" />
-
-- **Average Pizzas per Order**
-  
-<img width="473" height="135" alt="image" src="https://github.com/user-attachments/assets/d6ceb763-b803-40c2-83b8-7b9c90771d8f" />
+- KPI cards provide a compact executive summary for rapid business review.
+- Monthly trend analysis supports revenue monitoring and helps identify periods of stronger or weaker commercial performance.
+- Day-level demand analysis supports workforce planning and improves staffing alignment with customer traffic.
+- Hour-level demand visibility helps operations teams prepare for service peaks and improve throughput readiness.
+- Product performance ranking enables menu engineering by distinguishing hero items from weak contributors.
+- Category and size preference analysis helps guide product positioning, promotional planning, and inventory preparation.
 
 
-These Dax functions helps in providing the base for drilling into more structured, detailed and specific analysis directed towards problem statement at hand.
+---
 
+
+
+## Actionable Business Recommendations
+
+Based on the dashboard structure, the following actions would be relevant for business stakeholders:
+
+- Align staffing more closely with the busiest days and peak order hours
+- Protect and promote top-performing pizzas through stronger menu placement or targeted offers
+- Review bottom-performing products for repositioning, repricing, bundling, or removal
+- Use category and size preference trends to optimize inventory planning and product mix
+- Monitor monthly sales movement regularly to support proactive business planning
 
 
 ---
@@ -308,6 +308,20 @@ The solution helps frame key operational and commercial questions in a visual, b
 - Operational planning opportunities
 
 Overall, this showcases how business intelligence can turn transactional data into strategic visibility creating value for money.
+
+---
+
+## Tools & Skills Used
+
+- **Power BI**
+- **Power Query**
+- **Data Modeling**
+- **DAX**
+- **KPI Dashboard Design**
+- **Business Performance Analysis**
+- **Interactive Data Visualization**
+- **Visual Story telling**
+
 
 ---
 
