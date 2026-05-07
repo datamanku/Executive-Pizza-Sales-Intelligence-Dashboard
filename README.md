@@ -152,19 +152,19 @@ These Dax functions helps in providing the base for drilling into more structure
 
 The dashboard includes four primary KPI cards to provide an at-a-glance view of business performance:
 
-- **Total Sales** – overall revenue generated
+- ### **Total Sales** – overall revenue generated
 
 <img width="258" height="70" alt="image" src="https://github.com/user-attachments/assets/a4b0373f-5fac-453e-8765-0411f38517b9" />
 
-- **Total Orders** – total volume of customer orders
+- ### **Total Orders** – total volume of customer orders
 
 <img width="248" height="67" alt="image" src="https://github.com/user-attachments/assets/623e51e2-24b6-47d1-9a2d-a9885db3222b" />
 
-- **Average Orders per Day** – daily operational demand indicator
+- ### **Average Orders per Day** – daily operational demand indicator
 
 <img width="257" height="68" alt="image" src="https://github.com/user-attachments/assets/409dfd9a-c218-487e-8cff-f07fa884b635" />
 
-- **Average Pizzas per Order** – basket-size / order composition indicator
+- ### **Average Pizzas per Order** – basket-size / order composition indicator
 
 <img width="252" height="68" alt="image" src="https://github.com/user-attachments/assets/dc8523ff-74eb-455c-98f2-036fad2bf5d5" />
 
